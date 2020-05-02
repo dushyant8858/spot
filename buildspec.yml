@@ -1,0 +1,29 @@
+# Do not change version. This is the version of aws buildspec, not the version of your buldspec file.
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10  
+    commands:
+      - printenv
+      
+  pre_build:
+    commands:
+      - echo Started pre_build...
+      - echo pre_build completed on `date`
+      - echo Done pre_build...
+  build:
+    commands:
+      - echo Started build...
+      - echo build completed on `date`
+      - echo Done build...
+  post_build:
+    commands:
+      - echo Started post_build...
+      - echo post_build completed on `date`
+      - echo Done post_build...
+
+artifacts:
+  files:
+    - "**/*"
