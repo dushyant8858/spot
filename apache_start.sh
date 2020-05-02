@@ -1,3 +1,3 @@
 #!/bin/bash
  
-systemctl httpd restart
+systemctl start httpd
