@@ -1,7 +1,7 @@
 #!/bin/bash
  
 #Stop apache service before deploying new code
-systemctl httpd stop
+systemctl stop httpd
  
 #mkdir -p /home/ubuntu/code
 #tar -vczf /home/sap/betasite-git-backup.`date`.tar.gz /home/xxuserxx/xxcodedirectoryxx
